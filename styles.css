@@ -24,13 +24,6 @@ html.before_loading {
 	color: #ccc;
 }
 
-::marker {
-	text-indent: 50px !important;
-	background: #fff;
-	color: #fff;
-	font-size: 15px;
-}
-
 ::-webkit-scrollbar-button {
 	background-image:url('');
 	background-repeat:no-repeat;
@@ -145,6 +138,7 @@ header {
 	background-color: #fff;
 	height: 75px;
 	z-index: 99;
+	overflow: hidden;
 }
 
 .logo_img {
@@ -275,6 +269,14 @@ header {
 
 .menu a.discord::before {
 	background-color: #7289DA;
+}
+
+.menu a.archive:hover {
+	color: #23751e;
+}
+
+.menu a.archive::before {
+	background-color: #23751e;
 }
 
 .menu a::before {
@@ -502,6 +504,104 @@ ul.secondText {
 	overflow: visible;
 }
 
+.slider {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.slider_item {
+	flex-basis: 25%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
+	height: 75vh;
+	font-size: 1.6vw;
+	transition: 0.2s;
+	flex-direction: column;
+	overflow: visible;
+	cursor: pointer;
+}
+
+.slider_item span {
+	text-shadow: 0px 0px 20px #000;
+	overflow: visible;
+}
+
+.slider_item:hover {
+	font-weight: 700;
+}
+
+.slider_item-1 {
+	background: url(imgs/1.png) no-repeat center center;
+	background-size: cover;
+}
+
+.slider_item-2 {
+	background: url(imgs/2.png) no-repeat center center;
+	background-size: cover;
+}
+
+.slider_item-3 {
+	background: url(imgs/3.png) no-repeat center center;
+	background-size: cover;
+}
+
+.slider_item-4 {
+	background: url(imgs/4.png) no-repeat center center;
+	background-size: cover;
+}
+
+.slider_link {
+	text-decoration: none;
+	overflow: visible;
+}
+
+.slider_text {
+	width: 75%;
+	margin: 15px;
+	font-size: 1.35vw;
+	border: 1px solid #23751e;
+	box-shadow: 0px 0px 10px #23751e;
+	padding: 15px;
+	border-radius: 10px;
+	background-color: rgba(0, 0, 0, 0.6);
+	
+}
+
+.slider_button {
+	padding: 15px;
+	margin-top: 15px;
+	border-radius: 20px;
+	border: 3px solid #1c54ad;
+	box-shadow: 0px 0px 50px #1c54ad;
+	cursor: pointer;
+	background-color: #fff;
+	overflow: visible !important;
+	transition: 0.4s;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 2vw;
+	color: #000;
+}
+
+.a_slider_button {
+	text-decoration: none;
+	overflow: visible;
+}
+
+.slider_button:hover {
+	background-color: #2062c9;
+	color: #fff;
+}
+
+.slider_item-active {
+	font-weight: 700;
+	flex-basis: 50%;
+	cursor: auto;
+}
 
 /* BREAKPOINTS */
 
@@ -575,6 +675,21 @@ ul.secondText {
 
 	.coffeeman {
 		font-size: 6vw;
+	}
+
+	.slider {
+		flex-flow: column;
+		height: calc(100vh - 110px);
+	}
+
+	.slider_item {
+		width: 100%;
+		height: 25%;
+		font-size: 4vw;
+	}
+
+	.slider_text {
+		font-size: 1.75vw;
 	}
 
 }
