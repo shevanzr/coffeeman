@@ -4,7 +4,8 @@ window.onload = function () {
 	window.setTimeout(function () {
 		$('.preloader').removeClass('loaded_hiding');
 		$('.preloader').addClass('loaded');
-	}, 600);
+		$('.mobile_menu').addClass('mobile_transition');
+	}, 1000);
 }
 
 function change_menu() {
