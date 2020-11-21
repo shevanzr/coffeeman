@@ -9,4 +9,5 @@ window.onload = function () {
 
 function change_menu() {
 	$('.menu_btn').toggleClass('menu_active');
+	$('.mobile_menu').toggleClass('mobile_menu_active');
 }
