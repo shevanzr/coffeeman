@@ -521,6 +521,10 @@ ul.secondText {
 		width: 47.5%;
 	}
 
+	h5.main_text {
+		font-size: 21.2px !important;
+	}
+
 }
 
 /* Portrait tablets and small desktops */
