@@ -1,17 +1,17 @@
-.alien_isolation img {
-	border: 1px solid #23751e;
-	box-shadow: 0px 0px 10px #23751e, 0px 0px 50px #23751e;
+.developing img {
+	border: 1px solid #fff;
+	box-shadow: 0px 0px 10px #fff, 0px 0px 50px #fff;
 }
 
-.alien_isolation .archive_text-title {
-	text-shadow: 0px 0px 15px #23751e, 0px 0px 75px #23751e;
+.developing .archive_text-title {
+	text-shadow: 0px 0px 15px #fff, 0px 0px 50px #fff;
 }
 
-.alien_isolation .archive_button {
-	border: 3px solid #23751e;
+.developing .archive_button {
+	border: 3px solid #fff;
 }
 
-.alien_isolation .archive_button:hover {
-	background-color: #23751e;
-	box-shadow: 0px 0px 15px #23751e;
+.developing .archive_button:hover {
+	background-color: #fff;
+	box-shadow: 0px 0px 15px #fff;
 }
