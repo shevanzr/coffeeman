@@ -385,7 +385,7 @@ header {
 	position: relative;
 }
 
-.about {
+.content {
 	padding: 1.5vw;
 	display: flex;
 	justify-content: center;
@@ -581,7 +581,7 @@ ul.secondText {
 
 .slider_button {
 	padding: 15px;
-	margin-top: 15px;
+	margin-top: 12.5px;
 	border-radius: 20px;
 	border: 3px solid #1c54ad;
 	box-shadow: 0px 0px 50px #1c54ad;
@@ -616,7 +616,8 @@ ul.secondText {
 	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 20px;
+	margin-top: 15px;
+	margin-bottom: 20px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -627,14 +628,17 @@ ul.secondText {
 	width: 100%;
 	background-color: #222;
 	display: flex;
+	margin-top: 7.5px;
 }
 
 .archive_img {
-	width: 12.5%;
+	width: 10vw;
+	height: 10vw;
 	border-radius: 50%;
-	margin-top: 15px;
-	margin-bottom: 15px;
+	margin-top: 30px;
+	margin-bottom: 30px;
 	margin-left: 7.5%;
+	object-fit: cover;
 }
 
 .archive_text {
@@ -664,13 +668,20 @@ ul.secondText {
 	font-size: 1.05vw;
 }
 
+.archive_link-wrapper {
+	width: 25%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: visible;
+}
+
 .archive_link {
-	margin-right: 7.5%;
-	width: 17.5%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	text-decoration: none;
+	overflow: visible;
 }
 
 .archive_button {
@@ -679,6 +690,10 @@ ul.secondText {
 	border-radius: 20px;
 	transition: 0.4s;
 	overflow: visible;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 /* BREAKPOINTS */
@@ -715,6 +730,8 @@ ul.secondText {
 
 	.archive_img {
 		margin-left: 0;
+		height: 20vw;
+		width: 20vw;
 	}
 
 	.archive_text {
@@ -734,16 +751,11 @@ ul.secondText {
 		margin-right: 0;
 		margin-bottom: 15px;
 		margin-top: 15px;
-		width: 25%;
 		overflow: visible;
 	}
 
 	.archive_button {
 		font-size: 3vw;
-		width: 100%;
-		display: flex;
-		justify-content: center;
-		align-items: center;
 	}
 
 }
