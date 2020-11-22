@@ -10,6 +10,10 @@ body {
 	background-color: #333;
 }
 
+th {
+	text-align: left;
+}
+
 html.before_loading {
 	overflow-y: hidden;
 }
@@ -696,6 +700,86 @@ ul.secondText {
 	align-items: center;
 }
 
+.nightbot_table-text {
+	font-family: "Russo One", sans-serif;
+	font-size: 25px;
+	text-align: center;
+}
+
+.nightbot_wrapper {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+	margin-top: 25px;
+	flex-wrap: wrap;
+}
+
+.nightbot_table {
+	width: 45%;
+}
+
+.nightbot_table-table {
+	width: 100%;
+	margin-top: 10px;
+	border-collapse: collapse;
+}
+
+.nightbot_table-table th, .nightbot_table-table td {
+	font-family: 'Oswald', sans-serif;
+}
+
+.nightbot_table-table th::selection, .nightbot_table-table td::selection {
+	text-shadow: none;
+}
+
+.nightbot_table-main {
+	font-size: 1.5em;
+	text-transform: uppercase;
+	transition: .15s;
+
+}
+
+.nightbot_table-secondary {
+	border-top: 1px solid #000;
+	transition: .15s;
+}
+
+.nightbot_table-1 .nightbot_table-secondary:hover, .nightbot_table-1 .nightbot_table-main:hover {
+	background-color: #e57d20;
+	text-shadow: 0px 0px 3px #000, 0px 0px 5px #000, 0px 0px 10px #000, 0px 0px 15px #000;
+}
+
+.nightbot_table-2 .nightbot_table-secondary:hover, .nightbot_table-2 .nightbot_table-main:hover {
+	background-color: #9a20e5;
+	text-shadow: 0px 0px 3px #000, 0px 0px 5px #000, 0px 0px 10px #000, 0px 0px 15px #000;
+}
+
+.nightbot_table-3 .nightbot_table-secondary:hover, .nightbot_table-3 .nightbot_table-main:hover {
+	background-color: #20e5aa;
+	text-shadow: 0px 0px 3px #000, 0px 0px 5px #000, 0px 0px 10px #000, 0px 0px 15px #000;
+}
+
+.nightbot_table-4 .nightbot_table-secondary:hover, .nightbot_table-4 .nightbot_table-main:hover {
+	background-color: #9ae520;
+	text-shadow: 0px 0px 3px #000, 0px 0px 5px #000, 0px 0px 10px #000, 0px 0px 15px #000;
+}
+
+.tar {
+	text-align: right;
+	padding-right: 7.5px;
+	padding-top: 2.5px;
+	padding-bottom: 2.5px;
+	border-right: 1px solid #000;
+}
+
+.tal {
+	text-align-last: left;
+	padding-left: 7.5px;
+	padding-top: 2.5px;
+	padding-bottom: 2.5px;
+}
+
 /* BREAKPOINTS */
 
 /* Large desktops and laptops */
@@ -756,6 +840,11 @@ ul.secondText {
 
 	.archive_button {
 		font-size: 3vw;
+	}
+
+	.nightbot_table {
+		width: 80%;
+		margin-bottom: 60px;
 	}
 
 }
