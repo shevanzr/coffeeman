@@ -708,7 +708,43 @@ ul.secondText {
 /* Portrait tablets and small desktops */
 @media screen and (max-width: 991px) {
 
-	
+	.archive_item {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.archive_img {
+		margin-left: 0;
+	}
+
+	.archive_text {
+		margin-left: 0;
+		width: 80%;
+	}
+
+	.archive_text-title {
+		font-size: 6vw;
+	}
+
+	.archive_text-desc {
+		font-size: 2.1vw;
+	}
+
+	.archive_link {
+		margin-right: 0;
+		margin-bottom: 15px;
+		margin-top: 15px;
+		width: 25%;
+		overflow: visible;
+	}
+
+	.archive_button {
+		font-size: 3vw;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 
 }
 
